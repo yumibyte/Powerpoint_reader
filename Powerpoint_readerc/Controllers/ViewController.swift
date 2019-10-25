@@ -11,6 +11,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textFieldInput: UITextField!
+    
     let sentence = "Hello, my name is Ashley"
     
     override func viewDidLoad() {
@@ -18,9 +20,20 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         print("sentence to parse: ")
         
-        if let answer = readLine() {
+        
+    }
+    
+    // Click button to give question (run partsOfSpeech())
+    
+    @IBAction func partsOfSpeechButton(_ sender: Any) {
+        
+        if let answer = textFieldInput.text {
             partsOfSpeech(for: answer)
         }
+    }
+    
+    @IBAction func mySetButton(_ sender: Any) {
+        
     }
     
     // Initialization of NSLinguisticTagger
@@ -38,6 +51,9 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    
+    
     
     
     

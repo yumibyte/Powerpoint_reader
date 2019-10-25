@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		165B04F72362C729001608C1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B04F62362C729001608C1 /* TableViewController.swift */; };
 		16D67860235FD56A004D1802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6785F235FD56A004D1802 /* AppDelegate.swift */; };
 		16D67862235FD56A004D1802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D67861235FD56A004D1802 /* ViewController.swift */; };
 		16D67865235FD56A004D1802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D67863235FD56A004D1802 /* Main.storyboard */; };
 		16D67867235FD56A004D1802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D67866235FD56A004D1802 /* Assets.xcassets */; };
 		16D6786A235FD56A004D1802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D67868235FD56A004D1802 /* LaunchScreen.storyboard */; };
+		16F8132A2362CA620034823B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F813292362CA620034823B /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		165B04F62362C729001608C1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		16D6785C235FD569004D1802 /* Powerpoint_readerc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Powerpoint_readerc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D6785F235FD56A004D1802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16D67861235FD56A004D1802 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		16D67866235FD56A004D1802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16D67869235FD56A004D1802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16D6786B235FD56A004D1802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F813292362CA620034823B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,47 @@
 			isa = PBXGroup;
 			children = (
 				16D6785F235FD56A004D1802 /* AppDelegate.swift */,
-				16D67861235FD56A004D1802 /* ViewController.swift */,
-				16D67863235FD56A004D1802 /* Main.storyboard */,
-				16D67866235FD56A004D1802 /* Assets.xcassets */,
-				16D67868235FD56A004D1802 /* LaunchScreen.storyboard */,
+				16F8132C2362CA7A0034823B /* Controllers */,
+				16F8132B2362CA680034823B /* Data Model */,
+				16F8132D2362CA8F0034823B /* View */,
+				16F8132E2362CAA70034823B /* Supporting Files */,
 				16D6786B235FD56A004D1802 /* Info.plist */,
 			);
 			path = Powerpoint_readerc;
+			sourceTree = "<group>";
+		};
+		16F8132B2362CA680034823B /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				16F813292362CA620034823B /* Card.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		16F8132C2362CA7A0034823B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				16D67861235FD56A004D1802 /* ViewController.swift */,
+				165B04F62362C729001608C1 /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		16F8132D2362CA8F0034823B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16D67863235FD56A004D1802 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16F8132E2362CAA70034823B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16D67866235FD56A004D1802 /* Assets.xcassets */,
+				16D67868235FD56A004D1802 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D67862235FD56A004D1802 /* ViewController.swift in Sources */,
+				165B04F72362C729001608C1 /* TableViewController.swift in Sources */,
 				16D67860235FD56A004D1802 /* AppDelegate.swift in Sources */,
+				16F8132A2362CA620034823B /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
