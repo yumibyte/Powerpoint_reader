@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/ashleyraigosa/Desktop/Programming/Xcode - swift/Powerpoint_readerc/Powerpoint_readerc/Controllers/CardsViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Powerpoint_readerc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

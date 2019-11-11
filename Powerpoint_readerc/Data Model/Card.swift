@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class Card {
+    var term: String = ""
+    var definition: String = ""
+    
+}

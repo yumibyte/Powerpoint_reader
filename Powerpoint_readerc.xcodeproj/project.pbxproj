@@ -3,21 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		165B04F72362C729001608C1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B04F62362C729001608C1 /* TableViewController.swift */; };
+		16BECD0A2378D9090015DAC8 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BECD092378D9090015DAC8 /* CardsViewController.swift */; };
 		16D67860235FD56A004D1802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6785F235FD56A004D1802 /* AppDelegate.swift */; };
 		16D67862235FD56A004D1802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D67861235FD56A004D1802 /* ViewController.swift */; };
 		16D67865235FD56A004D1802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D67863235FD56A004D1802 /* Main.storyboard */; };
 		16D67867235FD56A004D1802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D67866235FD56A004D1802 /* Assets.xcassets */; };
 		16D6786A235FD56A004D1802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D67868235FD56A004D1802 /* LaunchScreen.storyboard */; };
 		16F8132A2362CA620034823B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F813292362CA620034823B /* Card.swift */; };
+		C58920B46D116B2646A02107 /* Pods_Powerpoint_readerc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B4F27A0092DF96E8BF05D9 /* Pods_Powerpoint_readerc.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		165B04F62362C729001608C1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		16BECD092378D9090015DAC8 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardsViewController.swift; path = "/Users/ashleyraigosa/Desktop/Programming/Xcode - swift/Powerpoint_readerc/Powerpoint_readerc/Controllers/CardsViewController.swift"; sourceTree = "<absolute>"; };
 		16D6785C235FD569004D1802 /* Powerpoint_readerc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Powerpoint_readerc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D6785F235FD56A004D1802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16D67861235FD56A004D1802 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +27,9 @@
 		16D67869235FD56A004D1802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16D6786B235FD56A004D1802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16F813292362CA620034823B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		53728B5C84EF5BD09C610259 /* Pods-Powerpoint_readerc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Powerpoint_readerc.debug.xcconfig"; path = "Target Support Files/Pods-Powerpoint_readerc/Pods-Powerpoint_readerc.debug.xcconfig"; sourceTree = "<group>"; };
+		A1B4F27A0092DF96E8BF05D9 /* Pods_Powerpoint_readerc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Powerpoint_readerc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92A64906B1BDE63DE3B33E3 /* Pods-Powerpoint_readerc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Powerpoint_readerc.release.xcconfig"; path = "Target Support Files/Pods-Powerpoint_readerc/Pods-Powerpoint_readerc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58920B46D116B2646A02107 /* Pods_Powerpoint_readerc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BE5C8DD5F493D135BAAC6DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53728B5C84EF5BD09C610259 /* Pods-Powerpoint_readerc.debug.xcconfig */,
+				C92A64906B1BDE63DE3B33E3 /* Pods-Powerpoint_readerc.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		16D67853235FD569004D1802 = {
 			isa = PBXGroup;
 			children = (
 				16D6785E235FD569004D1802 /* Powerpoint_readerc */,
 				16D6785D235FD569004D1802 /* Products */,
+				0BE5C8DD5F493D135BAAC6DC /* Pods */,
+				D7DA7F8C62B72A172240EF03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +74,9 @@
 		16D6785E235FD569004D1802 /* Powerpoint_readerc */ = {
 			isa = PBXGroup;
 			children = (
+				16F8132B2362CA680034823B /* Data Model */,
 				16D6785F235FD56A004D1802 /* AppDelegate.swift */,
 				16F8132C2362CA7A0034823B /* Controllers */,
-				16F8132B2362CA680034823B /* Data Model */,
 				16F8132D2362CA8F0034823B /* View */,
 				16F8132E2362CAA70034823B /* Supporting Files */,
 				16D6786B235FD56A004D1802 /* Info.plist */,
@@ -79,8 +95,8 @@
 		16F8132C2362CA7A0034823B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				16BECD092378D9090015DAC8 /* CardsViewController.swift */,
 				16D67861235FD56A004D1802 /* ViewController.swift */,
-				165B04F62362C729001608C1 /* TableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -102,6 +118,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D7DA7F8C62B72A172240EF03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B4F27A0092DF96E8BF05D9 /* Pods_Powerpoint_readerc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16D6786E235FD56A004D1802 /* Build configuration list for PBXNativeTarget "Powerpoint_readerc" */;
 			buildPhases = (
+				C7C44C880DC62666BDC2293E /* [CP] Check Pods Manifest.lock */,
 				16D67858235FD569004D1802 /* Sources */,
 				16D67859235FD569004D1802 /* Frameworks */,
 				16D6785A235FD569004D1802 /* Resources */,
+				9BB3B02849F7F6E05BB5BB95 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,13 +194,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9BB3B02849F7F6E05BB5BB95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Powerpoint_readerc/Pods-Powerpoint_readerc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Powerpoint_readerc/Pods-Powerpoint_readerc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Powerpoint_readerc/Pods-Powerpoint_readerc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7C44C880DC62666BDC2293E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Powerpoint_readerc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16D67858235FD569004D1802 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16BECD0A2378D9090015DAC8 /* CardsViewController.swift in Sources */,
 				16D67862235FD56A004D1802 /* ViewController.swift in Sources */,
-				165B04F72362C729001608C1 /* TableViewController.swift in Sources */,
 				16D67860235FD56A004D1802 /* AppDelegate.swift in Sources */,
 				16F8132A2362CA620034823B /* Card.swift in Sources */,
 			);
@@ -320,6 +388,7 @@
 		};
 		16D6786F235FD56A004D1802 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53728B5C84EF5BD09C610259 /* Pods-Powerpoint_readerc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +407,7 @@
 		};
 		16D67870235FD56A004D1802 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92A64906B1BDE63DE3B33E3 /* Pods-Powerpoint_readerc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
