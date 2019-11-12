@@ -1,0 +1,6 @@
+framework module Pods_Powerpoint_readerc {
+  umbrella header "Pods-Powerpoint_readerc-umbrella.h"
+
+  export *
+  module * { export * }
+}
