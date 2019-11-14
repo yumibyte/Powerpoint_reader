@@ -34,6 +34,7 @@ class ViewController: UIViewController {
     
     @IBAction func mySetButton(_ sender: Any) {
         
+        self.performSegue(withIdentifier: "goToMySet", sender: self)
     }
     
     // Initialization of NSLinguisticTagger

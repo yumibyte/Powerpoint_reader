@@ -56,7 +56,7 @@
                     <navigationItem key="navigationItem" id="AXX-eO-z93"/>
                     <connections>
                         <outlet property="textFieldInput" destination="xCL-af-OUU" id="Xbf-OG-MJZ"/>
-                        <segue destination="ant-hr-M7Y" kind="show" id="PGv-iw-clW"/>
+                        <segue destination="ant-hr-M7Y" kind="show" identifier="goToMySet" id="PGv-iw-clW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
