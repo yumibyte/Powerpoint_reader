@@ -12,14 +12,16 @@ class CardsViewController: UIViewController {
     // Instance variables
     var flashCardArray: [Card] = [Card]()
     
+    @IBOutlet weak var cardText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Shadow of card
+        // TODO: Shadow of card
         
         // Do any additional setup after loading the view.
     }
-
+    
     
     /*
     // MARK: - Navigation

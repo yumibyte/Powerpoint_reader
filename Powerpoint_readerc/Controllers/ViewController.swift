@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -17,20 +17,34 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("sentence to parse: ")
-        
-        
+        // Do any additional setup after loading the view.        
+        self.hideKeyboardWhenTappedAround()
     }
     
     // Click button to give question (run partsOfSpeech())
     
     @IBAction func partsOfSpeechButton(_ sender: Any) {
         
-        if let answer = textFieldInput.text {
-            partsOfSpeech(for: answer)
+        // Upload sentence into Firebase database
+        let flashCardDB = Database.database().reference().child("Flashcards")
+        
+        let flashCardDictionary = ["Term": textFieldInput.text,
+                                   "Definition": "test"] as [String : Any]
+        if let definition = textFieldInput.text {
+            flashCardDB.childByAutoId().setValue(flashCardDictionary) {
+                (error, reference) in
+                
+                if error != nil {
+                    print(error!)
+                } else {
+                    print("Message saved successfully!")
+                    
+                }
+            }
         }
     }
+    
+    
     
     @IBAction func mySetButton(_ sender: Any) {
         
@@ -52,11 +66,18 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    
-    
-    
-    
-    
+       
 }
 
+// Dismiss keyboard when return is clicked
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}

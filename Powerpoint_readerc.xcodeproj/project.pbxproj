@@ -13,6 +13,7 @@
 		16D67865235FD56A004D1802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D67863235FD56A004D1802 /* Main.storyboard */; };
 		16D67867235FD56A004D1802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D67866235FD56A004D1802 /* Assets.xcassets */; };
 		16D6786A235FD56A004D1802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D67868235FD56A004D1802 /* LaunchScreen.storyboard */; };
+		16DA5125237D06BD00C999CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16DA5124237D06BD00C999CB /* GoogleService-Info.plist */; };
 		16F8132A2362CA620034823B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F813292362CA620034823B /* Card.swift */; };
 		C58920B46D116B2646A02107 /* Pods_Powerpoint_readerc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B4F27A0092DF96E8BF05D9 /* Pods_Powerpoint_readerc.framework */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		16D67866235FD56A004D1802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16D67869235FD56A004D1802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16D6786B235FD56A004D1802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16DA5124237D06BD00C999CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16F813292362CA620034823B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		53728B5C84EF5BD09C610259 /* Pods-Powerpoint_readerc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Powerpoint_readerc.debug.xcconfig"; path = "Target Support Files/Pods-Powerpoint_readerc/Pods-Powerpoint_readerc.debug.xcconfig"; sourceTree = "<group>"; };
 		A1B4F27A0092DF96E8BF05D9 /* Pods_Powerpoint_readerc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Powerpoint_readerc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 				16F8132D2362CA8F0034823B /* View */,
 				16F8132E2362CAA70034823B /* Supporting Files */,
 				16D6786B235FD56A004D1802 /* Info.plist */,
+				16DA5124237D06BD00C999CB /* GoogleService-Info.plist */,
 			);
 			path = Powerpoint_readerc;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D6786A235FD56A004D1802 /* LaunchScreen.storyboard in Resources */,
+				16DA5125237D06BD00C999CB /* GoogleService-Info.plist in Resources */,
 				16D67867235FD56A004D1802 /* Assets.xcassets in Resources */,
 				16D67865235FD56A004D1802 /* Main.storyboard in Resources */,
 			);
