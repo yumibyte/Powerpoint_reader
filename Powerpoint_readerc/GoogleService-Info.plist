@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>812934375983-nhem4igj031tffgnj452shi4a3foorug.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.812934375983-nhem4igj031tffgnj452shi4a3foorug</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCuv9P9XCDIg0gzkofWAFEM8QDRwOhcYss</string>
+	<key>GCM_SENDER_ID</key>
+	<string>812934375983</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ashleyRaigosa.flashCardMaker</string>
+	<key>PROJECT_ID</key>
+	<string>ar-photo-to-video</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ar-photo-to-video.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:812934375983:ios:82a0dab84405f0247e74da</string>
+	<key>DATABASE_URL</key>
+	<string>https://ar-photo-to-video.firebaseio.com</string>
+</dict>
+</plist>
