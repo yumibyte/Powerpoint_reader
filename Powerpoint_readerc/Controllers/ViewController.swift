@@ -28,10 +28,9 @@ class ViewController: UIViewController {
         // Upload sentence into Firebase database
         let flashCardDB = Database.database().reference().child("Flashcards")
         
-        let flashCardDictionary = ["Term": textFieldInput.text,
+        let flashCardDictionary = ["Term": textFieldInput.text!,
                                    "Definition": "test"] as [String : Any]
-        if let definition = textFieldInput.text {
-            flashCardDB.childByAutoId().setValue(flashCardDictionary) {
+        flashCardDB.childByAutoId().setValue(flashCardDictionary) {
                 (error, reference) in
                 
                 if error != nil {
@@ -40,8 +39,8 @@ class ViewController: UIViewController {
                     print("Message saved successfully!")
                     
                 }
-            }
         }
+        
     }
     
     

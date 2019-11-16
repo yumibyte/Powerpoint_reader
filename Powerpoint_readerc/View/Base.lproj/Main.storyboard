@@ -38,7 +38,7 @@
                                     <constraint firstItem="lZ3-aE-iS3" firstAttribute="leading" secondItem="c7d-hY-Yhf" secondAttribute="leading" constant="95" id="kIo-wn-i54"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quH-hq-TJO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quH-hq-TJO">
                                 <rect key="frame" x="158" y="402" width="98" height="30"/>
                                 <state key="normal" title="Convert to set"/>
                                 <connections>
@@ -58,10 +58,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xCL-af-OUU" secondAttribute="trailing" constant="68" id="CQj-6G-612"/>
                             <constraint firstItem="quH-hq-TJO" firstAttribute="top" secondItem="xCL-af-OUU" secondAttribute="bottom" constant="77" id="I4b-P3-YDA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c7d-hY-Yhf" secondAttribute="bottom" constant="108" id="Q1j-x7-v0d"/>
+                            <constraint firstItem="quH-hq-TJO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="Qoj-Wv-wqV"/>
                             <constraint firstItem="c7d-hY-Yhf" firstAttribute="top" secondItem="quH-hq-TJO" secondAttribute="bottom" constant="250" id="Xip-aP-rkp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c7d-hY-Yhf" secondAttribute="trailing" constant="87" id="Y0o-TO-56g"/>
                             <constraint firstItem="c7d-hY-Yhf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="hMh-z7-Ska"/>
                             <constraint firstItem="xCL-af-OUU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="203" id="n7R-4I-fdc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="quH-hq-TJO" secondAttribute="trailing" constant="158" id="okG-D2-j2X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
