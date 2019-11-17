@@ -20,26 +20,35 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.        
         self.hideKeyboardWhenTappedAround()
     }
-    
+
     // Click button to give question (run partsOfSpeech())
-    
+//MARK: - Firebase data manipulation
     @IBAction func partsOfSpeechButton(_ sender: Any) {
         
-        // Upload sentence into Firebase database
-        let flashCardDB = Database.database().reference().child("Flashcards")
-        
-        let flashCardDictionary = ["Term": textFieldInput.text!,
-                                   "Definition": "test"] as [String : Any]
-        flashCardDB.childByAutoId().setValue(flashCardDictionary) {
-                (error, reference) in
-                
-                if error != nil {
-                    print(error!)
-                } else {
-                    print("Message saved successfully!")
+        // Make sure textField != nil
+        if let text = textFieldInput.text {
+            // Upload sentence into Firebase database
+            let flashCardDB = Database.database().reference().child("Flashcards")
+            
+            let flashCardDictionary = ["Term": text,
+                                       "Definition": "test"] as [String : Any]
+            flashCardDB.childByAutoId().setValue(flashCardDictionary) {
+                    (error, reference) in
                     
-                }
+                    if error != nil {
+                        print(error!)
+                    } else {
+                        print("Message saved successfully!")
+                        
+                    }
+            }
+            // put textField input into language parser
+            partsOfSpeech(for: text)
+            
         }
+        
+        
+        
         
     }
     
@@ -50,12 +59,13 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "goToMySet", sender: self)
     }
     
-    // Initialization of NSLinguisticTagger
-    let tagger = NSLinguisticTagger(tagSchemes:[.tokenType, .language, .lexicalClass, .nameType, .lemma], options: 0)
-    let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace, .joinNames]
-    
-    // Identify Parts of Speech
+//MARK: - Functionality for creating set
     func partsOfSpeech(for text: String) {
+        // Initialization of NSLinguisticTagger
+        let tagger = NSLinguisticTagger(tagSchemes:[.tokenType, .language, .lexicalClass, .nameType, .lemma], options: 0)
+        let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace, .joinNames]
+        
+        // Identifying parts of speech
         tagger.string = text
         let range = NSRange(location: 0, length: text.utf16.count)
         tagger.enumerateTags(in: range, unit: .word, scheme: .lexicalClass, options: options) { tag, tokenRange, _ in
@@ -64,10 +74,12 @@ class ViewController: UIViewController {
                 print("\(word): \(tag.rawValue)")
             }
         }
+        
     }
        
 }
 
+//MARK: - Extension for keyboard manipulation
 // Dismiss keyboard when return is clicked
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
